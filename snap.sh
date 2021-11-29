@@ -18,10 +18,21 @@ echo Load programs
 sudo apt install tree
 sudo apt install unzip
 sudo apt-get -y install python3-pip
+# intall tmux
+sudo apt-get intall tmux -y
+sudo apt-get install vim -y
 
 # load .vimrc file
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
+
+#load colorschemes
+cp -r ./colors ~/.vim/
+
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 
 # load .bashrc file
 echo Load .bashrc file
