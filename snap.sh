@@ -26,6 +26,10 @@ sudo apt-get install vim -y
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
 
+# load .tmux_conf file
+echo Load .tmux_conf file
+cp ./.tmux_conf ~/.tmux_conf
+
 #load colorschemes
 cp -r ./colors ~/.vim/
 
