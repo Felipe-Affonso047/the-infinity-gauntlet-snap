@@ -8,6 +8,7 @@ set number              " turn on line numbers
 set ruler               " show line and column number of the cursor on right side of statusline
 syntax on               " turn on syntax highlighting
 colorscheme spacecamp
+set tabstop=2 shiftwidth=2 expandtab
 
 call plug#begin('~/.vim/plugged')
 
