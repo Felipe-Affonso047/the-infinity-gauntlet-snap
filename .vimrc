@@ -9,6 +9,10 @@ set ruler               " show line and column number of the cursor on right sid
 syntax on               " turn on syntax highlighting
 colorscheme spacecamp
 set tabstop=2 shiftwidth=2 expandtab
+set colorcolumn=80
+
+" Commands
+:command NERD NERDTreeToggle
 
 call plug#begin('~/.vim/plugged')
 
