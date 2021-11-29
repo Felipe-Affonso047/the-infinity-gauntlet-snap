@@ -31,7 +31,7 @@ echo Load .tmux_conf file
 cp ./.tmux_conf ~/.tmux_conf
 
 #load colorschemes
-cp -r ./colors ~/.vim/
+cp -r ./colors ~/.vim/colors
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
