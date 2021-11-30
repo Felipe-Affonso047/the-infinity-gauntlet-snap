@@ -31,8 +31,7 @@ echo Load .tmux_conf file
 cp ./.tmux_conf ~/.tmux_conf
 
 #load colorschemes
-mkdir ~/.vim/colors
-cp -r ./colors ~/.vim/colors
+cp -r ~/the-infinity-gauntlet-snap/colors ~/.vim/colors
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
