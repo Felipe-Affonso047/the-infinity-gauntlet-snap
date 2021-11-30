@@ -31,7 +31,7 @@ echo Load .tmux_conf file
 cp ./.tmux_conf ~/.tmux_conf
 
 #load colorschemes
-cp -r ./colors ~/.vim/colors
+cp ./colors ~/.vim/colors
 
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -78,6 +78,7 @@ sudo apt install default-jdk -y
 echo load CheckStyle for Java
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
 cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
+wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
 
