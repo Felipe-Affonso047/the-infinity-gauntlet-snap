@@ -76,6 +76,7 @@ sudo apt install cmdtest -y
 sudo apt install nodejs
 sudo npm install typescript -g
 sudo npm install tslint typescript -g
+sudo npm install eslint -g
 
 # load java programming software
 echo load Java
