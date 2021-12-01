@@ -69,6 +69,14 @@ sudo pip3 install --upgrade requests
 sudo apt install vim-youcompleteme -y
 vim-addon-manager install youcompleteme
 
+sudo apt install npm -y
+sudo apt install cmdtest -y
+
+# load node and typescript
+sudo apt install nodejs
+sudo npm install typescript -g
+sudo npm install tslint typescript -g
+
 # load java programming software
 echo load Java
 sudo apt install default-jdk -y
