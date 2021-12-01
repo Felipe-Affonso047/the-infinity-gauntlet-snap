@@ -77,6 +77,8 @@ sudo apt install nodejs
 sudo npm install typescript -g
 sudo npm install tslint typescript -g
 sudo npm install eslint -g
+sudo npm install -g ts-node
+sudo npm install -g prompt-syn
 
 # load java programming software
 echo load Java
