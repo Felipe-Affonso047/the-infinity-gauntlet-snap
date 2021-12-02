@@ -71,6 +71,8 @@ cp ./git-push.sh ~/scripts/git-push.sh
 sudo chmod +x ~/scripts/git-push.sh
 cp ./java-lint.sh ~/scripts/java-lint.sh
 sudo chmod +x ~/scripts/java-lint.sh
+cp ./commitgit.sh ~/scripts/commitgit.sh
+sudo chmod +x ~/scripts/commitgit.sh
 cp ./main.yml ~/scripts/main.yml
 cp ./swift.yml ~/scripts/swift.yml
 
