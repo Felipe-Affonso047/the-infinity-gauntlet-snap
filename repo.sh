@@ -30,6 +30,7 @@ if [ $2 = "Swift" ]; then
 else
   cp ~/scripts/main.yml ./main.yml
   cd ../..
+  cp ~/package-info.java ./package-info.java
   echo ''
   echo "[![GitHub's Super Linter](https://github.com/Felipe-Affonso047/$1/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/main.yml
