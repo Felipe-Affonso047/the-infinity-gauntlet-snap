@@ -13,6 +13,18 @@ echo Update and upgrade system
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
 
+# update Git
+echo upgrade Git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install -y git
+
+# load GitHub CLI
+echo load GitHub CLI
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt install gh -y
+
 # load some programs
 echo Load programs
 sudo apt install tree
