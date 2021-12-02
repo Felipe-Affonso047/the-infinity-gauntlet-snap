@@ -104,6 +104,8 @@ cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
 wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
+# copy package-info.java
+cp package-info.java ~/
 
 # you might need to get a newer version of swift
 # https://swift.org/download/
