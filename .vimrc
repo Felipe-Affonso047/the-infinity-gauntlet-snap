@@ -14,6 +14,15 @@ set encoding=utf-8
 set showmatch
 set scrolloff=5
 
+" Tab configuration
+set tabstop=4           " set tabs to 4 spaces
+set expandtab           " replace the tab, with actual spaces
+set shiftwidth=4        " number of spaces to use for each step of (auto)indent
+set softtabstop=4       " backspace after pressing <TAB> will remove up to this many spaces
+set autoindent          " turn on auto indent
+set smartindent         " even better autoindent (e.g. add indent after '{')
+set smarttab            " be smart when using tabs
+
 " Commands
 :command NERD NERDTreeToggle
 
