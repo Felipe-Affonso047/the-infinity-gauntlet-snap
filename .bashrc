@@ -16,3 +16,4 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias javalint='sudo java -jar ~/scripts/checkstyle.jar -c ~/scripts/mr-coxall_checks.xml ./*.java'
+alias mkrepo='~/scripts/repo.sh'
