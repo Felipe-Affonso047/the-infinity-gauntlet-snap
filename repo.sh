@@ -9,8 +9,20 @@ cd $1
 
 # create the local repo                                                          
 git init --initial-branch=main                                                   
-# then the remote                                                                
-gh repo create $1  --public --gitignore $2  --license "unlicense" --confirm
+# then the remote
+if [ $2 = "Typescript" ]; then
+  gh repo create $1  --public --gitignore Javascript  --license "unlicense" --confirm
+  npm init -y
+  npm install typescript --save-dev
+  npm install @types/node --save-dev
+  npx tsc --init --rootDir src --outDir build \
+  --esModuleInterop --resolveJsonModule --lib es6 \
+  --module commonjs --allowJs true --noImplicitAny true
+  mkdir src
+  touch src/index.ts
+else
+  gh repo create $1  --public --gitignore $2  --license "unlicense" --confirm
+fi
 git pull origin main
 
 # create README.md
@@ -27,13 +39,15 @@ if [ $2 = "Swift" ]; then
   echo''
   echo "[![SwiftLint](https://github.com/Felipe-Affonso047/$1/workflows/SwiftLint/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/swift.yml
-else
+elif [ $2 = "Java" ]; then
   cp ~/scripts/main.yml ./main.yml
   cd ../..
   cp ~/package-info.java ./package-info.java
   echo ''
   echo "[![GitHub's Super Linter](https://github.com/Felipe-Affonso047/$1/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/main.yml
+elif [ $2 = "Typescript" ]; then
+  
 fi
 
 # update remote
