@@ -10,8 +10,8 @@ cd $1
 # create the local repo                                                          
 git init --initial-branch=main                                                   
 # then the remote
-if [ $2 ="Typescript" ]; then
-  gh repo create $1  --public --gitignore Javascript  --license "unlicense" --confirm
+if [ $2 = "Typescript" ]; then
+  gh repo create $1  --public --license "unlicense" --confirm
   npm init -y
   npm install typescript --save-dev
   npm install @types/node --save-dev
@@ -32,14 +32,14 @@ echo "# $1" >> README.md
 # add the GitHub Action for Linting
 mkdir -p .github/workflows
 echo $2
-if [ $2 ="Swift" ]; then
+if [ $2 = "Swift" ]; then
   cd .github/workflows
   cp ~/scripts/swift.yml ./swift.yml
   cd ../..
   echo''
   echo "[![SwiftLint](https://github.com/Felipe-Affonso047/$1/workflows/SwiftLint/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/swift.yml
-elif [ $2 ="Java" ]; then
+elif [ $2 = "Java" ]; then
   cd .github/workflows
   cp ~/scripts/main.yml ./main.yml
   cd ../..
@@ -47,7 +47,7 @@ elif [ $2 ="Java" ]; then
   echo ''
   echo "[![GitHub's Super Linter](https://github.com/Felipe-Affonso047/$1/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/main.yml
-elif [ $2 ="Typescript" ]; then
+elif [ $2 = "Typescript" ]; then
   echo "typescript"
 fi
 
