@@ -5,10 +5,7 @@
 
 # make the directory and cd into it
 mkdir $1
-cd $1
-
-# create the local repo                                                          
-git init --initial-branch=main                                                   
+cd $1                                                
 
 # then the remote
 if [ $2 = "Typescript" ]; then
@@ -51,6 +48,10 @@ elif [ $2 = "Java" ]; then
 elif [ $2 = "Typescript" ]; then
   echo "typescript"
 fi
+
+
+# create the local repo                                                          
+git init --initial-branch=main   
 
 # update remote
 git add *
