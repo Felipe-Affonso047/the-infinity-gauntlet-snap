@@ -47,7 +47,7 @@ elif [ $2 = "Java" ]; then
   echo "[![GitHub's Super Linter](https://github.com/Felipe-Affonso047/$1/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Felipe-Affonso047/$1/actions)" >> ./README.md
   git add .github/workflows/main.yml
 elif [ $2 = "Typescript" ]; then
-  
+  echo "typescript"
 fi
 
 # update remote
