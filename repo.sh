@@ -9,6 +9,7 @@ cd $1
 
 # create the local repo                                                          
 git init --initial-branch=main                                                   
+
 # then the remote
 if [ $2 = "Typescript" ]; then
   gh repo create $1  --public --license "unlicense" --confirm
