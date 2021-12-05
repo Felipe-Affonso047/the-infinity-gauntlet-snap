@@ -9,7 +9,6 @@ cd $1
 
 # then the remote
 if [ $2 = "Typescript" ]; then
-  gh repo create $1  --public --license "unlicense" --confirm
   npm init -y
   npm install typescript --save-dev
   npm install @types/node --save-dev
@@ -18,10 +17,7 @@ if [ $2 = "Typescript" ]; then
   --module commonjs --allowJs true --noImplicitAny true
   mkdir src
   touch src/index.ts
-else
-  gh repo create $1  --public --gitignore $2  --license "unlicense" --confirm
 fi
-git pull origin main
 
 # create README.md
 touch README.md
@@ -49,9 +45,16 @@ elif [ $2 = "Typescript" ]; then
   echo "typescript"
 fi
 
-
 # create the local repo                                                          
 git init --initial-branch=main   
+
+# then the remote
+if [ $2 = "Typescript" ]; then
+  gh repo create $1  --public --license "unlicense" --confirm
+else
+  gh repo create $1  --public --gitignore $2  --license "unlicense" --confirm
+fi
+git pull origin main
 
 # update remote
 git add *
