@@ -67,6 +67,8 @@ echo Load shell script files
 mkdir ~/scripts
 cp ./repo.sh ~/scripts/repo.sh
 sudo chmod +x ~/scripts/repo.sh
+cp ./typescriptSetup.sh ~/scripts/typescriptSetup.sh
+sudo chmod +x ~/scripts/typescriptSetup.sh
 cp ./git-push.sh ~/scripts/git-push.sh
 sudo chmod +x ~/scripts/git-push.sh
 cp ./java-lint.sh ~/scripts/java-lint.sh
