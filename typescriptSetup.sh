@@ -8,4 +8,6 @@ npx tsc --init --rootDir src --outDir build \
 mkdir src
 touch src/index.ts
 
+npm install prompt-sync
+
 commitgit typescriptSetup
