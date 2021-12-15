@@ -6,21 +6,16 @@
 * @since   2021-12-04
 */
 
-import * as readline from 'readline';
+"use strict"
+
+const ps = require("prompt-sync")
+let prompt = ps()
 
 function (s: someString) {
     // Some text
-    return "some text" + someString;
+    return "some text" + someString
 }
 
-console.log("Some question");
+var input = prompt("Enter input")
 
-var rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question("", function(answer) {
-  console.log("Thank you for your valuable feedback:", answer);
-  rl.close();
-});
+console.log("\nDone.")
