@@ -6,7 +6,7 @@ npx tsc --init --rootDir src --outDir build \
 --module commonjs --allowJs true --noImplicitAny true
 
 mkdir src
-touch src/index.ts
+cp ~/scripts/index.ts ./src/index.ts
 
 npm install prompt-sync
 
