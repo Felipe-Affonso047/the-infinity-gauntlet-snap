@@ -96,6 +96,8 @@ sudo npm install eslint -g
 sudo npm install -g ts-node
 sudo npm install prompt-sync
 
+cp ./index.ts ~/scripts/index.ts
+
 # update node
 sudo npm install -g n
 sudo n stable
